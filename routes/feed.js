@@ -7,10 +7,10 @@ const isAuth = require('../middleware/is-auth');
 const router = express.Router();
 
 // GET /feed/posts
-router.get('/posts', feedController.getFeeds);
+router.get('/getfeeds', feedController.getFeeds);
 
 // POST /feed/post/:postId
-router.get('/post/:postId', feedController.getFeed);
+router.get('/getfeed/:feedId', feedController.getFeed);
 
 // POST /feed/post
 router.post(
